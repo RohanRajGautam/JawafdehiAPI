@@ -531,7 +531,7 @@ class DocumentSourceAdminForm(forms.ModelForm):
     # Override url field to set assume_scheme and silence Django 6.0 warning
     url = forms.URLField(
         required=False,
-        max_length=500,
+        max_length=2000,
         assume_scheme='https',
         help_text="Optional URL to the source"
     )
